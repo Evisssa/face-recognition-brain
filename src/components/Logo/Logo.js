@@ -7,7 +7,7 @@ const Logo =() =>{
         <div className="ma4 mt0">
          <Tilt  className="Tilt br2 shadow-2 dot">
          <div className="Tilt-inner pa3">
-         <img src={brain}/>
+         <img  alt = "brainLogo"src={brain}/>
          </div>
          </Tilt>
         </div>

@@ -1,14 +1,14 @@
 import React from "react";
 import './ImageLinkForm.css';
 
-const ImageLinkForm =({handleInput,handleClick}) =>{
+const ImageLinkForm =({onInputChange,onButtonSubmit}) =>{
     return( 
         <div>
             <p>.....</p>
             <div className='center'>
                 <div className ='center form pa4 br3 shadow-5'>
-                <input type="text" placeholder="Enter" onInput={handleInput}/>
-                <button className='w-30 grow f4 link ph3 pv2 dib white bg-light-purple' onClick={handleClick}> 
+                <input type="text" placeholder="Enter" onChange={onInputChange} />
+                <button className="w-30 grow f4 link ph3 pv2 dib bg-light-purple" onClick={onButtonSubmit}  > 
                 Detect</button>
             </div>
            
@@ -22,6 +22,6 @@ const ImageLinkForm =({handleInput,handleClick}) =>{
     );
 }
 
-/*onChange={handleDetect}*/
+/*onChange={handleDetect}*onClick={handleClick}onInput={handleInput}*/
 
 export default ImageLinkForm;
